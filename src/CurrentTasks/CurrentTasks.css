@@ -1,0 +1,19 @@
+.current-tasks {
+  margin: 0;
+}
+
+.button {
+  margin-top: 15px;
+}
+
+.current-tasks__continer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inprogress {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px 15px 20px;
+}
