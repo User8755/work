@@ -5,11 +5,13 @@ import CurrentTasks from '../CurrentTasks/CurrentTasks';
 import { useEffect, useState } from 'react';
 import Modal from '../Modal/Modal';
 import CompletedTasks from '../CompletedTasks/CompletedTasks';
+import api from '../untils/api';
 
 function App() {
   const [modal, setModal] = useState(false);
   const [child, setChild] = useState(null);
   const [selectedCard, setSelectedCard] = useState({});
+  const [isTasks, setTasks] = useState([])
 
   useEffect(() => {
     if (!modal) {
@@ -17,7 +19,13 @@ function App() {
     }
   }, [modal]);
 
-  console.log(selectedCard);
+  useEffect(() => {
+    api
+      .getInitialCards()
+      .then((item) => setTasks(item))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className='App'>
       <Modal setModal={setModal} modal={modal} child={child}></Modal>
@@ -32,6 +40,8 @@ function App() {
               setChild={setChild}
               setSelectedCard={setSelectedCard}
               selectedCard={selectedCard}
+              isTasks={isTasks}
+              setTasks={setTasks}
             ></CurrentTasks>
           }
         ></Route>

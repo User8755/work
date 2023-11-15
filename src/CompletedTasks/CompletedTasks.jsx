@@ -3,7 +3,7 @@ import newTasks from '../untils/newTask';
 import Card from '../Card/card';
 function CompletedTasks({ setModal, setChild, setSelectedCard, selectedCard }) {
   return newTasks.map((item) => {
-    if (item.completed) {
+    if (item.inprogress === 'Завершена') {
       return (
         <Card
           key={item.task}
