@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 8px;
   align-items: flex-start;
+  max-width: 350px;
 }
 
 .form__select,
@@ -36,4 +37,8 @@
 .form__textarea:focus-visible,
 .form__input:focus-visible {
   outline: 1px solid var(--bg-dark);
+}
+
+.form__text {
+  text-align: start;
 }

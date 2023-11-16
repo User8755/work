@@ -12,7 +12,7 @@ function ViewTask(props) {
     api
       .updateTask(value, props.selectedCard._id)
       .then((item) => console.log(item))
-      .catch((err) => console.log(err))
+      .catch((err) => console.log(err));
   };
 
   const handleChange = (evt) => {
@@ -26,7 +26,7 @@ function ViewTask(props) {
       <h2 className='form__title'>Задача:</h2>
       <span>{props.selectedCard.task}</span>
       <h2 className='form__title'>Описание:</h2>
-      <span>{props.selectedCard.description}</span>
+      <span className='form__text'>{props.selectedCard.description}</span>
       <h2 className='form__title'>Приоритет:</h2>
       <span>{props.selectedCard.priorities}</span>
       <h2 className='form__title'>Статус:</h2>

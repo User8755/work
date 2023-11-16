@@ -21,8 +21,8 @@ function NewTask({ isTasks, setTasks, setModal }) {
       .createTask(value)
       .then((item) => setTasks([...isTasks, item]))
       .catch((err) => console.log(err));
-      setModal(false)
-      console.log(isTasks)
+    setModal(false);
+    console.log(isTasks);
   };
 
   return (
