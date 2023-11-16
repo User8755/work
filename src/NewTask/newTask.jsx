@@ -45,7 +45,12 @@ function NewTask({ isTasks, setTasks, setModal }) {
         required
       ></textarea>
       <h2 className='form__title'>Приоритет</h2>
-      <select onChange={handleChange} name='priorities' required>
+      <select
+        className='form__select'
+        onChange={handleChange}
+        name='priorities'
+        required
+      >
         <option value=''></option>
         <option value='Высокий'>Высокий</option>
         <option value='Средний'>Средний</option>

@@ -1,7 +1,8 @@
 /* eslint-disable array-callback-return */
+import { NavLink } from 'react-router-dom';
 import './CurrentTasks.css';
 import Card from '../Card/card';
-/*import newTasks from '../untils/newTask';*/
+import newTasks from '../untils/newTask';
 import NewTask from '../NewTask/newTask';
 
 function CurrentTasks({
@@ -24,17 +25,29 @@ function CurrentTasks({
       <div className='main-wrapper'>
         <aside className='aside'>
           <ul className='aside__list'>
-            <li className='aside__list-item'>Текущие задачи</li>
-            <li className='aside__list-item'>В работе</li>
-            <li className='aside__list-item'>Выполненные задачи</li>
+            <li className='aside__list-item active'>
+              <NavLink to='/current-tasks' className='header__nav-link'>
+                Текущие задачи
+              </NavLink>
+            </li>
+            <li className='aside__list-item'>
+              <NavLink to='/in-progress' className='header__nav-link active'>
+                В работе
+              </NavLink>
+            </li>
+            <li className='aside__list-item'>
+              <NavLink to='/completed-tasks' className='header__nav-link'>
+                Выполненные задачи
+              </NavLink>
+            </li>
           </ul>
-          <button className='button' onClick={handlerOpenModal}>
+          <button className='button button-aside' onClick={handlerOpenModal}>
             Новая задача
           </button>
         </aside>
         <div className='content'>
           <h2 className='content__title'>Приоритет</h2>
-          {/*<div className='current-tasks__continer'>*/}
+
           <div className='current-tasks__hi task'>
             <h2 className='content__subtitle'>Высокий</h2>
             {isTasks.map((item) => {
@@ -92,10 +105,11 @@ function CurrentTasks({
               }
             })}
           </div>
-          {/*</div>*/}
         </div>
       </div>
-      {/*<h2>В работе</h2>
+
+      {/*--- Перенесла в отдельный модуль---
+       <h2>В работе</h2>
       <div className='inprogress'>
         {isTasks.map((item) => {
           if (item.inprogress === 'В работе') {

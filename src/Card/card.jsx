@@ -18,6 +18,10 @@ function Card(props) {
     >
       <h3 className='card__title'>{props.tasks.task}</h3>
       <span className='card__span'>Приоритет: {props.tasks.priorities}</span>
+      <p className='card__description'>
+        Описание задачи Описание задачи Описание задачи Описание задачи Описание
+        задачи
+      </p>
     </article>
   );
 }

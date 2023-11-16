@@ -37,6 +37,8 @@ a:hover {
 .App {
   text-align: center;
   font-family: 'Raleway';
+  background-color: var(--bg-light);
+  min-height: 100vh;
 }
 
 .App-logo {

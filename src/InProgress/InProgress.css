@@ -1,0 +1,4 @@
+.content.inprogress {
+  grid-template-rows: repeat(auto, 1fr);
+}
+

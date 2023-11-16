@@ -1,23 +1,39 @@
 .form {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   align-items: flex-start;
 }
 
-.form__title {
-  text-align: left;
+.form__select,
+.form__textarea,
+.form__input {
+  font-size: 16px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--bg-dark);
+  outline: none;
+  outline-offset: none;
 }
 
+.form__select,
 .form__input {
-  min-width: 350px;
-  height: 20px;
+  height: 40px;
 }
 
 .form__textarea {
-  min-width: 350px;
   min-height: 150px;
 }
 
-.button {
-  margin: 10px auto;
+.form__select {
+  max-height: fit-content;
+}
+
+.form__select:focus-visible,
+.form__textarea:focus-visible,
+.form__input:focus-visible {
+  outline: 1px solid var(--bg-dark);
 }

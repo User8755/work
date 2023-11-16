@@ -23,19 +23,25 @@ function ViewTask(props) {
 
   return (
     <form onSubmit={handlerSubmit} className='form'>
-      <h2>Задача:</h2>
+      <h2 className='form__title'>Задача:</h2>
       <span>{props.selectedCard.task}</span>
-      <h2>Описание:</h2>
+      <h2 className='form__title'>Описание:</h2>
       <span>{props.selectedCard.description}</span>
-      <h2>Приоритет:</h2>
+      <h2 className='form__title'>Приоритет:</h2>
       <span>{props.selectedCard.priorities}</span>
-      <h2>Статус:</h2>
-      <select onChange={handleChange} name='inprogress'>
+      <h2 className='form__title'>Статус:</h2>
+      <select
+        className='form__select'
+        onChange={handleChange}
+        name='inprogress'
+      >
         <option value=''></option>
         <option value='В работе'>В работе</option>
         <option value='Завершена'>Завершена</option>
       </select>
-      <button type='submit'>Изменить статус</button>
+      <button className='button' type='submit'>
+        Изменить статус
+      </button>
     </form>
   );
 }
