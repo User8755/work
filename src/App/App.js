@@ -30,7 +30,7 @@ function App() {
   return (
     <div className='App'>
       <Modal setModal={setModal} modal={modal} child={child}></Modal>
-      {/*<Header></Header>*/}
+      <Header></Header>
       <Routes>
         <Route
           path='/current-tasks'
@@ -71,6 +71,8 @@ function App() {
               setChild={setChild}
               setSelectedCard={setSelectedCard}
               selectedCard={selectedCard}
+              isTasks={isTasks}
+              setTasks={setTasks}
             ></CompletedTasks>
           }
         ></Route>

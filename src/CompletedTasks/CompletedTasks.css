@@ -1,0 +1,9 @@
+.content .completed {
+  grid-template-rows: repeat(auto, 1fr);
+}
+.completed > .card {
+  color: var(--accent-dark-color);
+}
+.completed > .card > .card__title {
+  border-bottom: 2px solid var(--accent-dark-color);
+}

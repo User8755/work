@@ -47,7 +47,6 @@ function CurrentTasks({
         </aside>
         <div className='content'>
           <h2 className='content__title'>Приоритет</h2>
-
           <div className='current-tasks__hi task'>
             <h2 className='content__subtitle'>Высокий</h2>
             {isTasks.map((item) => {
