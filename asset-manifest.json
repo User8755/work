@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/work/static/css/main.d6bcb20d.css",
-    "main.js": "/work/static/js/main.538d1408.js",
+    "main.css": "/work/static/css/main.1d6eb546.css",
+    "main.js": "/work/static/js/main.4dd776e4.js",
     "static/js/787.b04cd8e5.chunk.js": "/work/static/js/787.b04cd8e5.chunk.js",
+    "static/media/Raleway-SemiBold.woff": "/work/static/media/Raleway-SemiBold.1b1b0d60a9389d05bc0d.woff",
+    "static/media/Raleway-Medium.woff": "/work/static/media/Raleway-Medium.ca5964f818ce9babcfc2.woff",
+    "static/media/Raleway-SemiBold.woff2": "/work/static/media/Raleway-SemiBold.252ca34d8f9564665680.woff2",
+    "static/media/Raleway-Medium.woff2": "/work/static/media/Raleway-Medium.2e6a00cdf927e3c249dc.woff2",
+    "static/media/Raleway-Bold.woff": "/work/static/media/Raleway-Bold.11dbfe73ad026a077c5e.woff",
+    "static/media/Raleway-Regular.woff": "/work/static/media/Raleway-Regular.1ff7a520a3a35a260fe7.woff",
+    "static/media/Raleway-Bold.woff2": "/work/static/media/Raleway-Bold.e2874c3cbb148a689a56.woff2",
+    "static/media/Raleway-Regular.woff2": "/work/static/media/Raleway-Regular.7b69108e3a1c157292f6.woff2",
     "index.html": "/work/index.html",
-    "main.d6bcb20d.css.map": "/work/static/css/main.d6bcb20d.css.map",
-    "main.538d1408.js.map": "/work/static/js/main.538d1408.js.map",
+    "main.1d6eb546.css.map": "/work/static/css/main.1d6eb546.css.map",
+    "main.4dd776e4.js.map": "/work/static/js/main.4dd776e4.js.map",
     "787.b04cd8e5.chunk.js.map": "/work/static/js/787.b04cd8e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6bcb20d.css",
-    "static/js/main.538d1408.js"
+    "static/css/main.1d6eb546.css",
+    "static/js/main.4dd776e4.js"
   ]
 }
