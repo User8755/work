@@ -1,11 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Card from '../Card/card';
-
-import NewTask from '../NewTask/newTask';
-
 import '../CurrentTasks/CurrentTasks.css';
 import './InProgress.css';
+import Card from '../Card/card';
+import NewTask from '../NewTask/newTask';
 
 function InProgress({
   setModal,
@@ -47,6 +45,7 @@ function InProgress({
       </aside>
       <section className='content inprogress'>
         <h2 className='content__title'>В работе</h2>
+
         {isTasks.map((item) => {
           if (item.inprogress === 'В работе') {
             return (

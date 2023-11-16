@@ -1,4 +1,10 @@
 .content.inprogress {
   grid-template-rows: repeat(auto, 1fr);
 }
-
+.inprogress > .card {
+  color: var(--accent-dark-color);
+  background-color: #fff;
+}
+.inprogress > .card > .card__title {
+  border-bottom: 2px solid var(--accent-dark-color);
+}

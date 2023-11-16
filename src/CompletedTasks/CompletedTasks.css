@@ -3,6 +3,7 @@
 }
 .completed > .card {
   color: var(--accent-dark-color);
+  background-color: #fff;
 }
 .completed > .card > .card__title {
   border-bottom: 2px solid var(--accent-dark-color);
