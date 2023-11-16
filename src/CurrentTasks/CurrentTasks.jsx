@@ -1,7 +1,7 @@
 /* eslint-disable array-callback-return */
 import './CurrentTasks.css';
 import Card from '../Card/card';
-import newTasks from '../untils/newTask';
+/*import newTasks from '../untils/newTask';*/
 import NewTask from '../NewTask/newTask';
 
 function CurrentTasks({
