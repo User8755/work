@@ -21,7 +21,7 @@ function App() {
   return (
     <div className='App'>
       <Modal setModal={setModal} modal={modal} child={child}></Modal>
-      <Header></Header>
+      {/*<Header></Header>*/}
       <Routes>
         <Route
           path='/current-tasks'
