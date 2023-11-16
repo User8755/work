@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './newTask.css';
-function NewTask() {
+import api from '../untils/api';
+function NewTask({ isTasks, setTasks, setModal }) {
   const [value, setValue] = useState({
     task: '', // задача
     priorities: '', // приоритет
@@ -16,7 +17,12 @@ function NewTask() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(value);
+    api
+      .createTask(value)
+      .then((item) => setTasks([...isTasks, item]))
+      .catch((err) => console.log(err));
+      setModal(false)
+      console.log(isTasks)
   };
 
   return (
