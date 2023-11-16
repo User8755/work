@@ -40,6 +40,7 @@ class Api {
       },
       body: JSON.stringify({
         inprogress: item.inprogress,
+        complite: item.complite
       }),
     }).then(this._checkRes);
   }

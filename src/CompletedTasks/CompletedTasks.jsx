@@ -45,7 +45,7 @@ function CompletedTasks({
         </button>
       </aside>
       <section className='content completed'>
-        {newTasks.map((item) => {
+        {isTasks.map((item) => {
           if (item.inprogress === 'Завершена') {
             return (
               <Card

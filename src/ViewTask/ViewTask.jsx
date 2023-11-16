@@ -2,22 +2,29 @@ import { useState } from 'react';
 import api from '../untils/api';
 
 function ViewTask(props) {
+  const date = new Date();
+  const monthName = date.toLocaleString('default', { month: 'long' });
   const [value, setValue] = useState({
     inprogress: '',
+    complite: '',
   });
-  console.log(props.selectedCard._id);
   const handlerSubmit = (evt) => {
     evt.preventDefault();
-    console.log(value);
     api
       .updateTask(value, props.selectedCard._id)
-      .then((item) => console.log(item))
+      .then((newCard) => {
+        props.setTasks((state) =>
+          state.map((c) => (c._id === props.selectedCard._id ? newCard : c))
+        );
+      })
       .catch((err) => console.log(err));
+    props.setModal(false);
   };
-
+  
   const handleChange = (evt) => {
     setValue({
       [evt.target.name]: evt.target.value,
+      complite: monthName
     });
   };
 

@@ -56,6 +56,7 @@ function InProgress({
                 setChild={setChild}
                 setSelectedCard={setSelectedCard}
                 selectedCard={selectedCard}
+                setTasks={setTasks}
               ></Card>
             );
           }

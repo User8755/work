@@ -59,6 +59,7 @@ function CurrentTasks({
                     setChild={setChild}
                     setSelectedCard={setSelectedCard}
                     selectedCard={selectedCard}
+                    setTasks={setTasks}
                   />
                 );
               }
@@ -77,6 +78,7 @@ function CurrentTasks({
                     setChild={setChild}
                     setSelectedCard={setSelectedCard}
                     selectedCard={selectedCard}
+                    setTasks={setTasks}
                   ></Card>
                 );
               }
@@ -99,6 +101,7 @@ function CurrentTasks({
                     setChild={setChild}
                     setSelectedCard={setSelectedCard}
                     selectedCard={selectedCard}
+                    setTasks={setTasks}
                   ></Card>
                 );
               }
