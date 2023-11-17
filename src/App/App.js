@@ -26,14 +26,14 @@ function App() {
       .then((item) => setTasks(item))
       .catch((err) => console.log(err));
   }, []);
-
+console.log(isTasks)
   return (
     <div className='App'>
       <Modal setModal={setModal} modal={modal} child={child}></Modal>
       <Header></Header>
       <Routes>
         <Route
-          path='/current-tasks'
+          path='/'
           element={
             <CurrentTasks
               modal={modal}

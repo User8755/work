@@ -26,7 +26,7 @@ function CurrentTasks({
         <aside className='aside'>
           <ul className='aside__list'>
             <li className='aside__list-item active'>
-              <NavLink to='/current-tasks' className='header__nav-link'>
+              <NavLink to='/' className='header__nav-link'>
                 Текущие задачи
               </NavLink>
             </li>

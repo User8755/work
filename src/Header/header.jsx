@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className='header'>
       <nav className='header__nav'>
-        <NavLink to='/current-tasks' className='header__nav-link'>
+        <NavLink to='/' className='header__nav-link'>
           Текущие задачи
         </NavLink>
         <NavLink to='/completed-tasks' className='header__nav-link'>
