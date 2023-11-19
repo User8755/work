@@ -53,7 +53,7 @@ function CurrentTasks({
               if (item.priorities === 'Высокий' && !item.inprogress) {
                 return (
                   <Card
-                    key={item.task}
+                    key={item._id}
                     tasks={item}
                     setModal={setModal}
                     setChild={setChild}
@@ -72,7 +72,7 @@ function CurrentTasks({
               if (item.priorities === 'Средний' && !item.inprogress) {
                 return (
                   <Card
-                    key={item.task}
+                    key={item._id}
                     tasks={item}
                     setModal={setModal}
                     setChild={setChild}
@@ -95,7 +95,7 @@ function CurrentTasks({
               ) {
                 return (
                   <Card
-                    key={item.task}
+                    key={item._id}
                     tasks={item}
                     setModal={setModal}
                     setChild={setChild}
@@ -117,7 +117,7 @@ function CurrentTasks({
           if (item.inprogress === 'В работе') {
             return (
               <Card
-                key={item.task}
+                key={item._id}
                 tasks={item}
                 setModal={setModal}
                 setChild={setChild}

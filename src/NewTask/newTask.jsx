@@ -6,6 +6,7 @@ function NewTask({ isTasks, setTasks, setModal }) {
     task: '', // задача
     priorities: '', // приоритет
     description: '', // описание
+    
   });
 
   const handleChange = (evt) => {
@@ -22,7 +23,6 @@ function NewTask({ isTasks, setTasks, setModal }) {
       .then((item) => setTasks([...isTasks, item]))
       .catch((err) => console.log(err));
     setModal(false);
-    console.log(isTasks);
   };
 
   return (

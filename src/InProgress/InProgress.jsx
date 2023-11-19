@@ -48,9 +48,10 @@ function InProgress({
 
         {isTasks.map((item) => {
           if (item.inprogress === 'В работе') {
+            console.log(item)
             return (
               <Card
-                key={item.task}
+                key={item._id}
                 tasks={item}
                 setModal={setModal}
                 setChild={setChild}

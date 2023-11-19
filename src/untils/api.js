@@ -28,6 +28,7 @@ class Api {
         priorities: item.priorities,
         inprogress: item.inprogress,
         description: item.description,
+        complite: new Date().toLocaleString('default', { month: 'long' })
       }),
     }).then(this._checkRes);
   }
@@ -40,7 +41,7 @@ class Api {
       },
       body: JSON.stringify({
         inprogress: item.inprogress,
-        complite: item.complite
+        complite: new Date().toLocaleString('default', { month: 'long' })
       }),
     }).then(this._checkRes);
   }

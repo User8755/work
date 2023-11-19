@@ -4,7 +4,6 @@ import './CompletedTasks.css';
 import Card from '../Card/card';
 import NewTask from '../NewTask/newTask';
 import '../CurrentTasks/CurrentTasks.css';
-import newTasks from '../untils/newTask';
 
 function CompletedTasks({
   setModal,
@@ -49,7 +48,7 @@ function CompletedTasks({
           if (item.inprogress === 'Завершена') {
             return (
               <Card
-                key={item.task}
+                key={item._id}
                 tasks={item}
                 setModal={setModal}
                 setChild={setChild}
