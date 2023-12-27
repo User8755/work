@@ -1,6 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Header from '../Header/header';
+import { Route, Routes } from 'react-router-dom'
 import CurrentTasks from '../CurrentTasks/CurrentTasks';
 import InProgress from '../InProgress/InProgress';
 import { useEffect, useState } from 'react';
@@ -30,7 +29,6 @@ console.log(isTasks)
   return (
     <div className='App'>
       <Modal setModal={setModal} modal={modal} child={child}></Modal>
-      <Header></Header>
       <Routes>
         <Route
           path='/'
